@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #f7f4f3;
+}
+
+section {
+  margin: 20px 0px 20px 0px;
+}
+
+aside {
+  position: sticky;
+  top: 0px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  width: 300px;
+  height: 100vh;
+  background-color: #e4002b;
+  color: white;
+}
+
+aside li {
+  border-top: 1px rgb(246, 99, 99) solid;
+  padding: 5px 10px 5px 30px;
+  font-size: 25px;
+  list-style-type: none;
+}
+aside img {
+  width: 100%;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+}
+
+aside a:hover {
+  color: rgb(243, 164, 164);
+  transition: 100ms;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  width: calc(100vw - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.center-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.start-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-buttons button {
+  border: 2px solid red;
+  background-color: none;
+  color: red;
+  padding: 5px 25px 5px 25px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.start-buttons button:hover {
+  background-color: red;
+  color: white;
+  transition: 200ms;
+}
+
+#start {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#start h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+}
+
+#start em {
+  font-size: 19px;
+}
+
+#start button {
+  position: inline;
+}
+
+#o-nas {
+  flex-direction: row;
+}
+
+#o-nas span {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+#o-nas p {
+  line-height: 40px;
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px;
+}
+
+#o-nas li {
+  margin: 5px 10px 5px 30px;
+  font-size: 18px;
+  list-style-type: disc;
+  list-style: ;
+
+  line-height: 15px;
+}
+
+#o-nas strong {
+  padding-left: 20px;
+}
+
+.img-onas-logo {
+  width: 400px;
+  margin-top: 60px;
+}
+
+.img-half {
+  width: 50%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#menu h2,
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.menu-item img {
+  width: 100%;
+}
+
+.menu-item button {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  padding: 2px 5px 2px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.menu-item button:hover {
+  background-color: red;
+  color: white;
+  transition: 200ms;
+}
+
+.menu-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+  aside {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+  }
+  aside ul {
+    display: flex;
+  }
+  aside li {
+    border: none;
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+  }
+  aside img {
+    width: 110px;
+    margin-bottom: 10px;
+  }
+  main {
+    width: 100%;
+  }
+  .menu-list {
+    display: none;
+  }
+  .img-half {
+    width: 100%;
+  }
+}
